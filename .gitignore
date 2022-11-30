@@ -1,0 +1,20 @@
+# Logs
+logs
+*.log
+
+*~
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# dotenv environment variables file
+.env
+.env.test
+
+dist
+
+.idea/
+.DS_Store
