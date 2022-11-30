@@ -4,13 +4,11 @@
 
 'use strict';
 
-import configure from "./configure";
-import init from "./init";
-import Logger from "./logger/Logger";
-import launch from "./launch";
+import init from './init';
+import Logger from './logger/Logger';
+import launch from './launch';
 
 async function main() {
-  configure();
   init();
   launch();
 }

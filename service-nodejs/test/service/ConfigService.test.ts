@@ -4,11 +4,11 @@
 
 'use strict';
 
-import ConfigService from "../../src/service/ConfigService";
+import ExampleService from "../../src/service/ExampleService";
 
 describe('Test ConfigService', ()=>{
   test('can set config and then read value', ()=>{
-    ConfigService.setConfig('SECRET', 'An unknown secret spread');
-    expect(ConfigService.getConfig('SECRET')).toBe('An unknown secret spread');
+    ExampleService.setExampleProperty('SECRET', 'An unknown secret spread');
+    expect(ExampleService.getExampleProperty('SECRET')).toBe('An unknown secret spread');
   });
 });

@@ -24,10 +24,12 @@
   },
   "homepage": "https://github.com/shaochuancs/web-boilerplate#readme",
   "dependencies": {
+    "cloud-config-client": "^1.6.2",
     "esserializer": "^1.2.4",
     "express": "^4.17.1",
     "log4js": "^6.3.0",
-    "moment": "^2.29.1"
+    "moment": "^2.29.1",
+    "properties-reader": "^2.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",

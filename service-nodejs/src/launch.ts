@@ -4,8 +4,8 @@
 
 'use strict';
 
+import config from "./config/ServiceConfig";
 import Logger from './logger/Logger';
-import ConfigService from "./service/ConfigService";
 import router from "./routes";
 import {generateAccessRecord} from "./utils/network";
 
@@ -32,7 +32,7 @@ function launch(): void {
     res.status(500).send(err.message);
   });
 
-  const port = ConfigService.getConfig('PORT');
+  const port = config.get('PORT');
   app.listen(port, ()=>{
     Logger.info(`Application listening on port: ${port}`);
   }).on('close', Logger.shutdown);
