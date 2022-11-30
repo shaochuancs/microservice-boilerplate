@@ -5,5 +5,5 @@ spring:
     config:
       server:
         git:
-          uri: file://${user.home}/tmp/config-repo
+          uri: https://github.com/shaochuancs/microservice-config-repo.git
           default-label: master
