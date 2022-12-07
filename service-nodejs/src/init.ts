@@ -7,12 +7,12 @@
 const path = require('path');
 const log4js = require('log4js');
 
-// Loading config from config server
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import config from "./config/ServiceConfig";
+import client from './eureka/EurekaClient';
 
 function init() {
   log4js.configure(path.resolve(__dirname, '../config/log4js.json'));
+
+  client.start();
 
   // Init database connection etc. and wait for complete.
 }
