@@ -1,2 +1,0 @@
-PORT=3000
-SECRET=secret_for_application_auth
